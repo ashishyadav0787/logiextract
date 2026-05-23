@@ -41,7 +41,7 @@ This mirrors GoComet Nova's 5-stage agent architecture exactly.
 
 ### Prerequisites
 - Docker & Docker Compose
-- OpenAI API key (~₹200–400 for testing)
+- Gemini API key (free for testing)
 
 ### 1. Clone and configure
 ```bash
@@ -123,26 +123,20 @@ PO number/date, buyer/supplier, delivery date, line items, total amount, currenc
 
 ---
 
-## Deployment (Railway/Render)
+## Deployment (Render) -backend
 
 ```bash
-# Backend on Railway
-railway login
-railway init
-railway up
+# Backend on render
 
-# Frontend on Vercel
-cd frontend
-npx vercel
-```
+
 
 Set environment variables:
-- `OPENAI_API_KEY`
-- `DATABASE_URL` (from Railway's PostgreSQL plugin)
+- `GEMINI_API_KEY`
+- `DATABASE_URL` 
 
 ---
 
-## Resume Bullet Points (for Ashish)
+## Resume Bullet Points 
 
 > Built an LLM-powered logistics document extraction agent using **LangGraph + OpenAI GPT-4o-mini** — a 5-stage agentic pipeline (scope resolution → context compilation → schema routing → plan+execute → evidence delivery) that extracts 15+ structured fields from Bills of Lading, Invoices, and Purchase Orders with confidence scoring and cross-document validation.
 
