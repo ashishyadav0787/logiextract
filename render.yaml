@@ -10,3 +10,4 @@ services:
         sync: false
       - key: DATABASE_URL
         sync: false
+    pythonVersion: "3.11"
